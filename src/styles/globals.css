@@ -16,7 +16,7 @@ body {
 
 @font-face {
   font-family: Akira;
-  src: url("../../public/Akira.otf") format("opentype");
+  src: url("/learning/public/Akira.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
 }
