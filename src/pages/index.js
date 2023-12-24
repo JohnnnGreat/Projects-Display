@@ -20,7 +20,7 @@ export default function Home() {
             <h1 className="leading-[1] c-text lg:text-[96px] text-[40px] mt-[.3rem] text-white">
               SHOWCASE
             </h1>
-            <div className="flex mt-[.5rem] sm:justify-cente text-[#1AE953] mt-text font-semibold hover:underline sm:mt-[2rem]">
+            <div className="flex mt-[.5rem] sm:justify-center text-[#1AE953] mt-text font-semibold hover:underline sm:mt-[2rem]">
               <button onClick={handleShowProjects}>
                 Click to View Projects
               </button>
