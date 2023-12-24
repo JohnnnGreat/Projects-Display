@@ -2,7 +2,9 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import { useState } from "react";
+import localFont from "@next/font/local";
 
+const myFont = localFont({ src: "../../public/Akira.otf" });
 export default function Home() {
   const [openProjects, setOpenProjects] = useState(false);
 
@@ -17,7 +19,9 @@ export default function Home() {
         <div className=" lg-[80%] py-[7rem] p-[1rem] sm:p-[0] h-[80%] bg-gradient-to-br from-[#005317] to-[#101010] rounded-md flex items-center justify-center w-[90%]">
           <div className=" ">
             <h1 className="leading-[1] text-white m-text">MY PROJECTS</h1>
-            <h1 className="leading-[1] c-text lg:text-[96px] text-[40px] mt-[.3rem] text-white">
+            <h1
+              className={`leading-[1] c-text lg:text-[96px] text-[40px] mt-[.3rem] text-white ${myFont.className}`}
+            >
               SHOWCASE
             </h1>
             <div className="flex mt-[.5rem] sm:justify-center text-[#1AE953] mt-text font-semibold hover:underline sm:mt-[2rem]">
