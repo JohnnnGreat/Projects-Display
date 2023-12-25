@@ -33,3 +33,8 @@ body {
 .c-text {
   font-family: "Akira", sans-serif;
 }
+
+.c-container {
+  background: red;
+  overflow: hidden !important;
+}

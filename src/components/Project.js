@@ -5,33 +5,36 @@ import Image from "next/image";
 
 const myFont = localFont({ src: "../../public/Akira.otf" });
 
-const Project = ({ dataAos }) => {
+const Project = ({ dataAos, path, first, second, work }) => {
   return (
     <div
-      className="md:h-screen py-[3rem]  flex items-center justify-center"
+      className="md:h-screen py-[3rem]  flex items-center justify-center overflow-hidden"
       data-aos={`${dataAos}`}
       data-aos-duration="1000"
     >
       <div className="w-[90%] p-[1rem] sm:p-[1rem] h-[80%] bg-[#161616] rounded-md flex items-center sm:px-[1.4rem] sm:flex-nowrap flex-wrap gap-[2.3rem]">
         <Image
-          src={require("../../public/sws.jpg")}
-          className="w-[100%] h-[300px] sm:h-[100%] rounded-md object-cover"
+          src={path}
+          className="w-[100%] sm:w-[550px] h-[300px] sm:h-[100%] rounded-md object-cover"
         />
         <div>
           <h1
-            className={` ${myFont.className} lg:text-[96px] text-[40px] text-white leading-[1] c-text`}
+            className={` ${myFont.className} lg:text-[96px] text-[35px] text-white leading-[1] c-text`}
           >
-            Job
+            {first}
           </h1>
           <h1
-            className={`  lg:text-[96px] text-[40px] text-white leading-[1] c-text ${myFont.className}`}
+            className={`  lg:text-[96px] text-[35px] text-white leading-[1] c-text ${myFont.className}`}
           >
-            Space
+            {second}
           </h1>
-          <p className="m-text my-[1rem] text-[.87rem] text-gray-400 ">
+          <p className="m-text my-[.5rem] text-[.87rem] text-gray-400 ">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
             sequi nesciunt possimus dolore sunt quidem facilis voluptatem nihil
             eum amet?
+          </p>
+          <p className="m-text mt-[.5rem] bg-gray-900 inline-block text-white py-[.6rem] px-[1rem] rounded-md border-[1px] border-gray-600">
+            {work}
           </p>
           <Link
             href={"/"}

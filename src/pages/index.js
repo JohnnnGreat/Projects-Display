@@ -6,6 +6,9 @@ import localFont from "@next/font/local";
 import Project from "@/components/Project";
 
 const myFont = localFont({ src: "../../public/Akira.otf" });
+import ImageOne from "../../public/MainP.jpg";
+import ImageTwo from "../../public/ImageTwo.png";
+import ImageThree from "../../public/ImageThree.png";
 
 export default function Home() {
   const [openProjects, setOpenProjects] = useState(false);
@@ -17,10 +20,10 @@ export default function Home() {
     <>
       <div
         className={`${
-          !openProjects && "h-screen"
-        } md:h-screen  py-[3rem] flex items-center justify-center`}
+          !openProjects && "h-screen overflow-hidden"
+        } md:h-screen  py-[3rem] flex items-center justify-center `}
       >
-        <div className="  py-[7rem] p-[1rem] sm:p-[0] h-[90%] bg-gradient-to-br from-[#005317] to-[#101010] rounded-md flex items-center justify-center w-[95%] sm:w-[80%]">
+        <div className="overflow-hidden  py-[7rem] p-[1rem] sm:p-[0] h-[90%] bg-gradient-to-br from-[#005317] to-[#101010] rounded-md flex items-center justify-center w-[95%] sm:w-[80%]">
           <div className=" ">
             <h1
               data-aos="fade-down"
@@ -51,10 +54,28 @@ export default function Home() {
         </div>
       </div>
       {openProjects && (
-        <div className="projects-container">
-          <Project dataAos="fade-right" />
-          <Project dataAos="fade-left" />
-          <Project dataAos="fade-right" />
+        <div className="projects-container overflow-hidden">
+          <Project
+            dataAos="fade-right"
+            path={ImageOne}
+            first={"Job"}
+            second={"Space"}
+            work={"UI DESIGN"}
+          />
+          <Project
+            dataAos="fade-left"
+            path={ImageTwo}
+            first={"Real"}
+            second={"Base"}
+            work={"UI DESIGN"}
+          />
+          <Project
+            dataAos="fade-right"
+            path={ImageThree}
+            first={"House"}
+            second={"of Max"}
+            work={"WEB DEVELOPMENT"}
+          />
         </div>
       )}
     </>
