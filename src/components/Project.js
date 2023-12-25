@@ -5,13 +5,17 @@ import Image from "next/image";
 
 const myFont = localFont({ src: "../../public/Akira.otf" });
 
-const Project = () => {
+const Project = ({ dataAos }) => {
   return (
-    <div className="md:h-screen py-[3rem]  flex items-center justify-center">
-      <div className="w-[90%] p-[1rem] sm:p-[0] h-[80%] bg-[#161616] rounded-md flex items-center sm:px-[1.4rem] sm:flex-nowrap flex-wrap gap-[2.3rem]">
+    <div
+      className="md:h-screen py-[3rem]  flex items-center justify-center"
+      data-aos={`${dataAos}`}
+      data-aos-duration="1000"
+    >
+      <div className="w-[90%] p-[1rem] sm:p-[1rem] h-[80%] bg-[#161616] rounded-md flex items-center sm:px-[1.4rem] sm:flex-nowrap flex-wrap gap-[2.3rem]">
         <Image
           src={require("../../public/sws.jpg")}
-          className="w-[100%] h-[300px] rounded-md object-cover"
+          className="w-[100%] h-[300px] sm:h-[100%] rounded-md object-cover"
         />
         <div>
           <h1
