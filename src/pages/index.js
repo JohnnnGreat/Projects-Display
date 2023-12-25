@@ -78,6 +78,9 @@ export default function Home() {
           />
         </div>
       )}
+      <footer className="m-text flex items-center justify-center p-[1.4rem] bg-[#161616] text-white font-bold underline">
+        <Link href={"/about"}>ABOUT ME</Link>
+      </footer>
     </>
   );
 }

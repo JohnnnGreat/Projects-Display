@@ -12,7 +12,7 @@ const Project = ({ dataAos, path, first, second, work }) => {
       data-aos={`${dataAos}`}
       data-aos-duration="1000"
     >
-      <div className="w-[90%] p-[1rem] sm:p-[1rem] h-[80%] bg-[#161616] rounded-md flex items-center sm:px-[1.4rem] sm:flex-nowrap flex-wrap gap-[2.3rem]">
+      <div className="w-[95%] p-[1rem] sm:p-[1rem] h-[80%] bg-[#161616] rounded-md flex items-center sm:px-[1.4rem] sm:flex-nowrap flex-wrap gap-[2.3rem]">
         <Image
           src={path}
           className="w-[100%] sm:w-[550px] h-[300px] sm:h-[100%] rounded-md object-cover"
