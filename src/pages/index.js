@@ -9,6 +9,7 @@ const myFont = localFont({ src: "../../public/Akira.otf" });
 import ImageOne from "../../public/MainP.jpg";
 import ImageTwo from "../../public/ImageTwo.png";
 import ImageThree from "../../public/ImageThree.png";
+import ImageFour from "../../public/ImageFour.jpg";
 
 export default function Home() {
   const [openProjects, setOpenProjects] = useState(false);
@@ -40,44 +41,21 @@ export default function Home() {
               SHOWCASE
             </h1>
             <div className="text-[.7rem] md:text-[1rem] flex mt-[.2rem] sm:justify-center text-[#1AE953] mt-text font-semibold  sm:mt-[2rem]">
-              <button
+              <Link
+                href="/projects"
                 data-aos="fade-up"
                 data-aos-delay="1000"
                 data-aos-duration="1000"
-                onClick={handleShowProjects}
+                // onClick={handleShowProjects}
                 className="border-[1px] border-white py-[.8rem] px-[1.2rem] rounded-full hover:bg-white hover:border-none hover:text-[#1AE953] font-bold"
               >
                 View Projects
-              </button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
-      {openProjects && (
-        <div className="projects-container overflow-hidden">
-          <Project
-            dataAos="fade-right"
-            path={ImageOne}
-            first={"Job"}
-            second={"Space"}
-            work={"UI DESIGN"}
-          />
-          <Project
-            dataAos="fade-left"
-            path={ImageTwo}
-            first={"Real"}
-            second={"Base"}
-            work={"UI DESIGN"}
-          />
-          <Project
-            dataAos="fade-right"
-            path={ImageThree}
-            first={"House"}
-            second={"of Max"}
-            work={"WEB DEVELOPMENT"}
-          />
-        </div>
-      )}
+
       <footer className="m-text flex items-center justify-center p-[1.4rem] bg-[#161616] text-white font-bold underline">
         <Link href={"/about"}>ABOUT ME</Link>
       </footer>

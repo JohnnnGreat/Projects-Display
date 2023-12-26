@@ -22,7 +22,7 @@ body {
 }
 .m-text {
   font-family: "Montserrat", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .mt-text {
@@ -37,4 +37,15 @@ body {
 .c-container {
   background: red;
   overflow: hidden !important;
+}
+
+.img-a {
+  transition: 2s ease-in-out;
+}
+
+:hover.img-a {
+  transition: 2s ease-in-out;
+  top: -100%;
+  position: absolute;
+  bottom: 100%;
 }
