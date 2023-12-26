@@ -12,10 +12,10 @@ const MotionImage = ({ dataAos, path, first, second, work }) => {
       data-aos-duration="1000"
     >
       <div className="w-[95%] sm:w-[85%] p-[1rem] sm:p-[1rem] h-[80%] bg-[#161616] rounded-md flex items-center sm:px-[1.4rem] sm:flex-nowrap flex-wrap gap-[2.3rem]">
-        <div className=" overflow-hidden relative w-[80%] h-[80%] flex items-center justify-center">
+        <div className=" overflow-hidden relative w-[80%] h-[300px] flex items-center justify-center">
           <Image
             src={path}
-            className="w-[100%] sm:w-[70%] h-[1200px] sm:h-[auto]  rounded-md absolute top-0 img-a"
+            className="w-[100%] sm:w-[70%] h-[auto] sm:h-[auto]  rounded-md absolute top-0 img-a"
           />
         </div>
         <div>
